@@ -1,0 +1,236 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@900&display=swap');
+
+
+/* Variables */
+:root {
+    --highlight: rgb(172, 129, 253);
+    --dark-highlight: rgb(156, 115, 231);
+    --font-color: rgb(35, 35, 35);
+    --bg-color: rgb(249, 243, 238);
+}
+
+
+/* Common Selectors */
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    color: var(--font-color);
+}
+
+header {
+    height: 100vh;
+    width: 100%;
+    background-color: var(--bg-color);
+    overflow: hidden;
+}
+
+main {
+    padding: 0 125px;
+    padding-top: 125px;
+}
+
+section {
+    padding-bottom: 125px
+}
+
+section h1 {
+    font-size: 2.2rem;
+}
+
+a {
+    text-decoration: none;
+}
+
+p {
+    font-size: 1.1rem;
+    font-weight: 300;
+    line-height: 1.8;
+}
+
+.filled-btn {
+    background-color: var(--font-color);
+    padding: 12.5px 35px;
+    transition: 0.3s all;
+}
+.filled-btn:hover {
+    background-color: rgb(255, 255, 255);
+    color: var(--font-color);
+}
+
+.highlight {
+    color: var(--highlight);
+}
+
+.bg-strip {
+    background-color: var(--highlight);
+    width: 31%;
+    height: 100vh;
+    position: absolute;
+    right: 0px;
+}
+
+/* Navigation Bar */
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 3% 8%;
+    transition: all 0.5s;
+    z-index: 2;
+}
+
+nav li {
+    display: inline-block;
+    margin-right: 75px;
+}
+
+nav li a {
+    transition: all 0.3s;
+}
+nav li a:hover {
+    color: black;
+}
+
+nav .logo {
+    font-size: 1.4rem;
+    font-family: "Playfair Display", serif;
+    font-weight: 900;
+}
+
+.buttons {
+    z-index: 1;
+    text-align: center;
+}
+.buttons a {
+    color: rgb(255, 255, 255);
+    margin-left: 50px;
+}
+
+#content {
+    padding: 4% 8%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.text {
+    width: 450px;
+}
+
+.text h1 {
+    font-size: 4rem;
+    font-weight: 800;
+}
+
+.text p {
+    margin-top: 10px;
+    margin-bottom: 40px;
+}
+
+.text a {
+    color: rgb(255, 255, 255);
+    font-weight: 500;
+}
+.text a:hover {
+    background-color: var(--highlight);
+    color: rgb(255, 255, 255);
+}
+
+.text a i {
+    color: white;
+    margin-right: 5px;
+    --fa-bounce-jump-scale-y: 1;
+}
+
+#content img {
+    z-index: 1;
+    width: 400px;
+    position: relative;
+    right: 8%;
+    bottom: 30px;
+    box-shadow: 0px 10px 30px var(--font-color);
+}
+
+/* About Section Starts */
+.features {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.feature-icon {
+    color: var(--highlight);
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    transition: all 0.3s;
+}
+.feature-icon:hover {
+    color: var(--dark-highlight);
+}
+
+.about-content {
+    margin-top: 125px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 75px;
+}
+
+.about-content h1 {
+    width: 40%;
+}
+
+.about-content p {
+    width: 40%;
+    text-align: left;
+}
+
+/* About Section Ends */
+
+/* Social Section Starts */
+
+#social {
+    text-align: center;
+}
+#social h1 {
+    margin-bottom: 50px;
+}
+
+#social i {
+    margin-right: 10px;
+    font-size: 1.5rem;
+}
+
+.contact {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 1.15rem;
+    font-weight: 500;
+    transition: all 0.3s;
+}
+.contact:hover {
+    color: var(--highlight);
+}
+
+.social-media {
+    margin-top: 50px;
+}
+
+.social-media a {
+    display: inline;
+    font-size: 1.2rem;
+    margin: 70px 35px;
+    transition: all 0.3s;
+}
+
+.social-media a i {
+    transition: all 0.3s;
+}
+.social-media a i:hover {
+    color: var(--highlight);
+}
+
+/* Social Section Ends */
