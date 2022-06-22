@@ -175,12 +175,18 @@ nav .logo {
     margin-top: 125px;
     display: flex;
     justify-content: space-between;
-    align-items: center;
     padding: 0 75px;
 }
 
-.about-content h1 {
+.about-content div {
     width: 40%;
+}
+
+.handdrawn-arrow {
+    width: 100px;
+    position: relative;
+    left: 30%;
+    margin-top: 20px;
 }
 
 .about-content p {
@@ -211,9 +217,6 @@ nav .logo {
     font-weight: 500;
     transition: all 0.3s;
 }
-.contact:hover {
-    color: var(--highlight);
-}
 
 .social-media {
     margin-top: 50px;
@@ -224,13 +227,6 @@ nav .logo {
     font-size: 1.2rem;
     margin: 70px 35px;
     transition: all 0.3s;
-}
-
-.social-media a i {
-    transition: all 0.3s;
-}
-.social-media a i:hover {
-    color: var(--highlight);
 }
 
 /* Social Section Ends */
