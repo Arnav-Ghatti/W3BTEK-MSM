@@ -5,11 +5,104 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sign Up | Book.io</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="../CSS/signup.css">
+
+    <!-- Fontawesome -->
+    <script src="https://kit.fontawesome.com/4f22996ba2.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
+    <img src="../Images/Patterns/Bg-Pattern1.svg" class="patterns" id="pattern1">
+    <img src="../Images/Patterns/Bg-Pattern2.svg" class="patterns" id="pattern2">
 
+    <section class="container forms">
+
+        <div class="form login">
+
+            <div class="form-content">
+
+                <h1>Login</h1>
+
+                <form action="#">
+
+                    <div class="field input-field">
+                        <input type="email" placeholder="Email" class="input">
+                        <i class="fa-solid fa-envelope"></i>
+                    </div>
+                    <div class="field input-field">
+                        <input type="password" placeholder="Password" class="password">
+                        <i class="fa-solid fa-lock"></i>
+                    </div>
+                    <div class="form-link">
+                        <a href="#" class="forgot-pass">Forgot password?</a>
+                    </div>
+                    <div class="field button-field">
+                        <button>Login</button>
+                    </div>
+
+                </form>
+
+                <div class="form-link">
+
+                    <span>Don't have an account? <a href="#" class="link signup-link">Signup</a></span>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- Signup Form -->
+
+        <div class="form signup">
+
+            <div class="form-content">
+
+                <h1>Signup</h1>
+
+                <form action="#">
+
+                    <div class="field input-field">
+                        <input type="email" placeholder="Name" class="input">
+                        <i class="fa-solid fa-user"></i>
+                    </div>
+
+                    <div class="field input-field">
+                        <input type="email" placeholder="Email" class="input">
+                        <i class="fa-solid fa-envelope"></i>
+                    </div>
+
+                    <div class="field input-field">
+                        <input type="password" placeholder="Create password" class="password">
+                        <i class="fa-solid fa-lock"></i>
+                    </div>
+
+                    <div class="field input-field">
+                        <input type="password" placeholder="Confirm password" class="password">
+                        <i class="fa-solid fa-lock"></i>
+                    </div>
+
+                    <div class="field button-field">
+                        <button>Signup</button>
+                    </div>
+
+                </form>
+
+                <div class="form-link">
+
+                    <span>Already have an account? <a href="#" class="link login-link">Login</a></span>
+
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- JavaScript -->
+    <script src="../JS/signup.js"></script>
 </body>
 
 </html>
