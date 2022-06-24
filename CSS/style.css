@@ -5,7 +5,7 @@
 /* Variables */
 :root {
     --highlight: rgb(172, 129, 253);
-    --dark-highlight: rgb(156, 115, 231);
+    --dark-highlight: rgb(141, 94, 228);
     --font-color: rgb(35, 35, 35);
     --bg-color: rgb(249, 243, 238);
 }
@@ -33,7 +33,7 @@ main {
 }
 
 section {
-    padding-bottom: 125px
+    padding-bottom: 125px;
 }
 
 section h1 {
@@ -129,16 +129,16 @@ nav .logo {
     margin-bottom: 40px;
 }
 
-.text a {
+.browse-books {
     color: rgb(255, 255, 255);
     font-weight: 500;
 }
-.text a:hover {
+.browse-books:hover {
     background-color: var(--highlight);
     color: rgb(255, 255, 255);
 }
 
-.text a i {
+.browse-books i {
     color: white;
     margin-right: 5px;
     --fa-bounce-jump-scale-y: 1;
@@ -191,7 +191,6 @@ nav .logo {
 }
 
 .about-content p {
-    width: 40%;
     text-align: left;
 }
 
@@ -212,6 +211,10 @@ nav .logo {
     width: 75%;
 }
 
+.author-images {
+    width: 75%;
+}
+
 .swiper-wrapper {
     margin-bottom: 75px;
 }
@@ -220,11 +223,23 @@ nav .logo {
 
 /* Social Section Starts */
 
+footer {
+    padding: 100px 0;
+    background-color: var(--font-color);
+}
+
 #social {
     text-align: center;
+    padding: 0;
 }
+
 #social h1 {
     margin-bottom: 50px;
+    color: white;
+}
+
+#social i {
+    color: white;
 }
 
 .contact {
@@ -235,6 +250,11 @@ nav .logo {
     font-size: 1.15rem;
     font-weight: 500;
     transition: all 0.3s;
+    color: white;
+}
+
+.contact i {
+    margin-right: 10px;
 }
 
 .social-media {
