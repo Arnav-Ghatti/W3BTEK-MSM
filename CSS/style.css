@@ -197,6 +197,25 @@ nav .logo {
 
 /* About Section Ends */
 
+/* Books Section Starts */
+#books {
+    padding-left: 75px;
+    padding-right: 75px;
+    text-align: center;
+}
+
+#books h1 {
+    margin-bottom: 75px;
+}
+
+.book-images {
+    width: 75%;
+}
+
+.swiper-wrapper {
+    margin-bottom: 75px;
+}
+
 /* Social Section Starts */
 
 #social {
@@ -206,13 +225,10 @@ nav .logo {
     margin-bottom: 50px;
 }
 
-#social i {
-    margin-right: 10px;
-    font-size: 1.5rem;
-}
-
 .contact {
     display: block;
+    width: 300px;
+    margin: 0 auto;
     margin-bottom: 10px;
     font-size: 1.15rem;
     font-weight: 500;

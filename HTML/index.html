@@ -12,6 +12,8 @@
 
     <!-- Font Awesome -->
     <script src="https://kit.fontawesome.com/4f22996ba2.js" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
 </head>
 
 <body>
@@ -89,9 +91,67 @@
                 </div>
 
                 <p>
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Non voluptate quibusdam, deserunt quae magni dolorum. <br><br>
-                    Ducimus nam ut, corrupti voluptatum id iusto laudantium saepe sint, eaque nesciunt consectetur omnis accusantium.
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Non voluptate quibusdam, deserunt quae
+                    magni dolorum. <br><br>
+                    Ducimus nam ut, corrupti voluptatum id iusto laudantium saepe sint, eaque nesciunt consectetur omnis
+                    accusantium.
                 </p>
+            </div>
+
+        </section>
+
+        <section id="books">
+
+            <h1>Popular Books</h1>
+
+            <div class="swiper mySwiper container">
+
+                <div class="swiper-wrapper content">
+
+                    <div class="swiper-slide card">
+
+                        <div class="card-content">
+                            <img src="../Images/Books/2 States.jpg" class="book-images">
+                            <h2 class="book-name">2 States</h2>
+                            <p class="author-name">Chetan Bhagat</p>
+                        </div>
+
+                    </div>
+
+                    <div class="swiper-slide card">
+
+                        <div class="card-content">
+                            <img src="../Images/Books/Harry Potter.jpg" class="book-images">
+                            <h2 class="book-name">2 States</h2>
+                            <p class="author-name">Chetan Bhagat</p>
+                        </div>
+
+                    </div>
+
+                    <div class="swiper-slide card">
+
+                        <div class="card-content">
+                            <img src="../Images/Books/Orient Express.jpg" class="book-images">
+                            <h2 class="book-name">2 States</h2>
+                            <p class="author-name">Chetan Bhagat</p>
+                        </div>
+
+                    </div>
+
+                    <div class="swiper-slide card">
+
+                        <div class="card-content">
+                            <img src="../Images/Books/Pride and Prejudice.jpg" class="book-images">
+                            <h2 class="book-name">2 States</h2>
+                            <p class="author-name">Chetan Bhagat</p>
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="swiper-pagination"></div>
+
             </div>
 
         </section>
@@ -118,7 +178,13 @@
     </main>
 
     <!-- JAVASCRIPT -->
-    <script src="./script.js"></script>
+
+    <!-- Swiper JS -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script src="../JS/script.js"></script>
 </body>
 
 </html>
