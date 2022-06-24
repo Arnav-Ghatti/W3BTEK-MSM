@@ -198,14 +198,14 @@ nav .logo {
 /* About Section Ends */
 
 /* Books Section Starts */
-#books {
+.slider {
     padding-left: 75px;
     padding-right: 75px;
     text-align: center;
 }
 
-#books h1 {
-    margin-bottom: 75px;
+.slider h1 {
+    margin-bottom: 60px;
 }
 
 .book-images {
@@ -215,6 +215,8 @@ nav .logo {
 .swiper-wrapper {
     margin-bottom: 75px;
 }
+
+/* Books Section Ends */
 
 /* Social Section Starts */
 
