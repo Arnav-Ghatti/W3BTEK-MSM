@@ -28,7 +28,7 @@ header {
 }
 
 main {
-    padding: 0 125px;
+    padding: 0 7.5%;
     padding-top: 125px;
 }
 
@@ -77,36 +77,46 @@ p {
 nav {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     padding: 3% 8%;
-    transition: all 0.5s;
-    z-index: 2;
 }
 
-nav li {
-    display: inline-block;
+.nav-menu {
+    z-index: 1;
+    display: flex;
+    justify-content: space-between;
+    width: 85%;
+}
+
+.nav-links a {
     margin-right: 75px;
-}
-
-nav li a {
     transition: all 0.3s;
 }
-nav li a:hover {
+.nav-links a:hover {
     color: black;
 }
 
-nav .logo {
-    font-size: 1.4rem;
-    font-family: "Playfair Display", serif;
-    font-weight: 900;
+.buttons a {
+    color: white;
+    margin-left: 50px;
 }
 
-.buttons {
-    z-index: 1;
-    text-align: center;
+.logo {
+    font-family: "Playfair Display", sans-serif;
+    font-size: 1.5rem;
 }
-.buttons a {
-    color: rgb(255, 255, 255);
-    margin-left: 50px;
+
+.hamburger {
+    display: none;
+}
+
+.bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    transition: all 0.3s;
+    background-color: white;
 }
 
 #content {
@@ -146,7 +156,7 @@ nav .logo {
 
 #content img {
     z-index: 1;
-    width: 400px;
+    width: 32.5%;
     position: relative;
     right: 8%;
     bottom: 30px;
@@ -176,7 +186,7 @@ nav .logo {
     margin-top: 125px;
     display: flex;
     justify-content: space-between;
-    padding: 0 75px;
+    padding: 0 5%;
 }
 
 .about-content div {
@@ -207,16 +217,16 @@ nav .logo {
     margin-bottom: 60px;
 }
 
-.book-images {
-    width: 75%;
+.images {
+    width: 80%;
 }
 
-.author-images {
-    width: 75%;
+.images {
+    width: 80%;
 }
 
 .swiper-wrapper {
-    margin-bottom: 75px;
+    margin-bottom: 5%;
 }
 
 /* Books Section Ends */
@@ -269,3 +279,126 @@ footer {
 }
 
 /* Social Section Ends */
+
+/* Media Queries */
+
+@media screen and (max-width: 1150px) {
+    .hamburger {
+        display: block;
+    }
+
+    .hamburger.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+    .hamburger.active .bar:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+    .hamburger.active .bar:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+    }
+    
+    .nav-menu {
+        position: fixed;
+        left: -100%;
+        top: 70px;
+        gap: 0;
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+        transition: 0.3s;
+        background-color: var(--highlight);
+    }
+
+    .nav-menu div {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .nav-menu a {
+        margin: 16px 0;
+    }
+
+    .nav-menu.active {
+        left: 0;
+    }
+
+    nav {
+        background-color: var(--highlight);
+        align-items: center;
+    }
+
+    nav a {
+        color: white;
+    }
+
+    .buttons a {
+        margin: 20px;
+    }
+
+    .bg-strip {
+        width: 0;
+        height: 0;
+        top: 0;
+        left: 0;
+    }
+
+    header {
+        height: auto;
+    }
+    
+    #content {
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+        margin-top: 50px;
+    }
+
+    #content img {
+        position: relative;
+        right: 0;
+        bottom: 0;
+        top: 50px;
+        width: 50%;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+
+    .handdrawn-arrow {
+        left: 0;
+        margin-bottom: 50px;
+    }
+    .about-content {
+        text-align: center;
+        flex-direction: column;
+    }
+    .about-content div {
+        width: 100%;
+    }
+    .about-content p {
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    main{
+        padding-top: 5%;
+    }
+
+    .images {
+        width: 100%;
+    }
+    
+    .features {
+        display: block;
+        padding: 0;
+    }
+
+    .feature {
+        margin: 20% 0;
+    }
+
+    #content h1 {
+        font-size: 3.1rem;
+    }
+}

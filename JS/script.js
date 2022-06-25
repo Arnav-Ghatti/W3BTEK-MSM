@@ -1,3 +1,20 @@
+const hamburger = document.querySelector(".hamburger");
+const navMenu = document.querySelector(".nav-menu");
+
+hamburger.addEventListener("click", () => {
+    hamburger.classList.toggle("active");
+    navMenu.classList.toggle("active");
+})
+
+var navLinks = document.querySelectorAll(".nav-menu a");
+
+for (var i = 0; i < navLinks.length; i++) {
+    navLinks[i].addEventListener("click", () => {
+        hamburger.classList.remove("active");
+        navMenu.classList.remove("active");
+    })
+}
+
 //Save current slide per view
 var currentSlidesPerView;
 
