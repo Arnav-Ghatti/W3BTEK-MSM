@@ -117,6 +117,7 @@ nav {
     margin: 5px auto;
     transition: all 0.3s;
     background-color: white;
+    border-radius: 50px;
 }
 
 #content {
@@ -126,7 +127,7 @@ nav {
 }
 
 .text {
-    width: 450px;
+    width: 35%;
 }
 
 .text h1 {
@@ -218,15 +219,7 @@ nav {
 }
 
 .images {
-    width: 80%;
-}
-
-.images {
-    width: 80%;
-}
-
-.swiper-wrapper {
-    margin-bottom: 5%;
+    width: 70%;
 }
 
 /* Books Section Ends */
@@ -300,7 +293,7 @@ footer {
     .nav-menu {
         position: fixed;
         left: -100%;
-        top: 70px;
+        top: 65px;
         gap: 0;
         flex-direction: column;
         width: 100%;
@@ -358,7 +351,11 @@ footer {
         right: 0;
         bottom: 0;
         top: 50px;
-        width: 50%;
+        width: 75%;
+    }
+
+    .text {
+        width: 90%;
     }
 }
 
@@ -386,7 +383,7 @@ footer {
     }
 
     .images {
-        width: 100%;
+        width: 80%;
     }
     
     .features {
