@@ -27,13 +27,9 @@ header {
     overflow: hidden;
 }
 
-main {
-    padding: 0 7.5%;
-    padding-top: 125px;
-}
-
 section {
-    padding-bottom: 125px;
+    padding: 10%;
+    padding-bottom: 0;
 }
 
 section h1 {
@@ -209,8 +205,6 @@ nav {
 
 /* Books Section Starts */
 .slider {
-    padding-left: 75px;
-    padding-right: 75px;
     text-align: center;
 }
 
@@ -227,7 +221,8 @@ nav {
 /* Social Section Starts */
 
 footer {
-    padding: 100px 0;
+    margin-top: 10%;
+    padding: 7% 0;
     background-color: var(--font-color);
 }
 
@@ -293,7 +288,7 @@ footer {
     .nav-menu {
         position: fixed;
         left: -100%;
-        top: 65px;
+        top: 55px;
         gap: 0;
         flex-direction: column;
         width: 100%;
@@ -378,12 +373,17 @@ footer {
 }
 
 @media screen and (max-width: 650px) {
-    main{
-        padding-top: 5%;
+    main {
+        padding: 0;
+        padding-bottom: 10%;
+    }
+    
+    section {
+        padding: 10% 5%;
     }
 
     .images {
-        width: 80%;
+        width: 60%;
     }
     
     .features {
@@ -396,6 +396,11 @@ footer {
     }
 
     #content h1 {
-        font-size: 3.1rem;
+        font-size: 3rem;
+    }
+
+    #books, #authors {
+        padding: 0;
+        padding-bottom: 5%;
     }
 }
