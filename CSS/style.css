@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;700;800;900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@900&display=swap');
 
 
@@ -264,6 +264,12 @@ footer {
     font-size: 1.2rem;
     margin: 70px 35px;
     transition: all 0.3s;
+}
+
+.copyright {
+    color: white;
+    font-weight: 200;
+    margin-top: 25px;
 }
 
 /* Social Section Ends */
